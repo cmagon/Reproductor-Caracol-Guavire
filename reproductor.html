@@ -1,0 +1,320 @@
+<!--Reproductor CARACOL RADIO GUAVIARE 102.3 fm-->
+<div id="caja0" style="position:absolute;">
+<script type="text/javascript">
+ var audio0, playbtn0, mutebtn0, seek_bar0;
+function initAudioPlayer(){
+    audio0 = new Audio();
+    audio0.src = "http://radiohd.streaminghd.co:7098/live";
+    
+    audio0.pause();
+
+    // Set object references
+    playbtn0 = document.getElementById("playpausebtn0");
+
+    // if it's not playing after calling play(), show the other icon
+    if(!audio0.paused) {
+        playbtn0.setAttribute("class", "pause0");        
+    }
+
+    // Add Event Handling
+    playbtn0.addEventListener("click",playPause0);
+    // Functions
+    function playPause0(){
+        if(audio0.paused){
+            audio0.play();
+            playbtn0.setAttribute("class", "pause0");
+        } else {
+            audio0.pause();
+            playbtn0.setAttribute("class", "play0");
+        }
+    }
+}
+window.addEventListener("load", initAudioPlayer);
+</script>
+<button id="playpausebtn0" class="play0"></button><span id="vivo0">EN VIVO</span>
+</div>
+
+<style type="text/css">
+
+button{ border:none; cursor:pointer; outline:none; }
+
+
+.pause0 {
+  background:url('pause.png') no-repeat;
+  width:68px;
+  height:68px;
+  
+  }
+.play0 {
+  background:url('play.png') no-repeat;
+  width:68px;
+  height:68px;
+  }
+   
+ @media (min-width: 0){
+  #caja0{
+    background-color: #333333;
+  }
+  span{
+    font-size: 0;
+  }
+ }
+       @media (min-width: 240px){
+  #caja0{
+  background: url("fondo240.png") no-repeat;
+  width: 240px;
+  height: 186px;
+
+ 
+  
+  }
+  #playpausebtn0{
+    margin: 55px;
+    margin-left:80px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px red;
+
+  }
+  #playpausebtn0:hover{
+ box-shadow: 0 0 20px red;
+  }
+  #vivo0{
+    font-size: 0em;
+
+  }
+ }
+ @media (min-width: 320px){
+  #caja0{
+  background: url("fondo320.png") no-repeat;
+  width: 320px;
+  height: 249px;
+  }
+  
+#playpausebtn0{
+    margin: 88px;
+    margin-left:123px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px red;
+    position: absolute;
+  }
+  #playpausebtn0:hover{
+ box-shadow: 0 0 20px red;
+  
+  }
+ @media (min-width: 480px){
+  #caja0{
+     background: url("fondo480.png") no-repeat;
+  width: 480px;
+  height: 373px;
+  }
+#playpausebtn0{
+    margin: 40px;
+    margin-left:40px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    position: absolute;
+  }
+ #playpausebtn0:hover{
+ box-shadow: 0 0 12px red;
+  }
+  #vivo0{
+    display: inline-block;
+    position: absolute;
+    background-color: red;
+    margin-left: 115px;
+    margin-top: 55px;
+    font-size: 2em;
+    font-family: futura md bt,normal;
+    opacity: 0.8;
+  }
+ }
+</style>
+
+<!--Reproductor GUAVIARE ESTEREO 92.7 fm-->
+
+<div id="caja1">
+<script type="text/javascript">
+ var audio1, playbtn1, mutebtn1, seek_bar1;
+function initAudioPlayer(){
+    audio1 = new Audio();
+    audio1.src = "http://live2.rcnmundo.com/lamega.mp3";
+    
+    audio1.pause();
+
+    // Set object references
+    playbtn1 = document.getElementById("playpausebtn1");
+
+    // if it's not playing after calling play(), show the other icon
+    if(!audio1.paused) {
+        playbtn1.setAttribute("class", "pause1");        
+    }
+
+    // Add Event Handling
+    playbtn1.addEventListener("click",playPause1);
+    // Functions
+    function playPause1(){
+        if(audio1.paused){
+            audio1.play();
+            playbtn1.setAttribute("class", "pause1");
+        } else {
+            audio1.pause();
+            playbtn1.setAttribute("class", "play1");
+        }
+    }
+}
+window.addEventListener("load", initAudioPlayer);
+</script>
+<button id="playpausebtn1" class="play1"></button><span id="vivo1">EN VIVO</span>
+</div>
+<style type="text/css">
+button{ border:none; cursor:pointer; outline:none; }
+.pause1 {
+  background:url('pause.png') no-repeat;
+  width:68px;
+  height:68px;
+  }
+.play1 {
+  background:url('play.png') no-repeat;
+  width:68px;
+  height:68px;
+  }   
+ @media (min-width: 0){
+  #caja1{
+    background-color: #333333;
+  }
+  span{
+    font-size: 0;
+  }
+ }
+ @media (min-width: 240px){
+  #caja1{
+  background: url("1fondo240.png") no-repeat;
+  width: 240px;
+  height: 186px;
+  margin-left: 0px;
+  margin-top: 190px;
+  position: absolute;
+  }
+  #playpausebtn1{
+    margin: 55px;
+    margin-left:80px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px red;
+  }
+  #playpausebtn1:hover{
+ box-shadow: 0 0 20px red;
+  }
+  #vivo1{
+    font-size: 0em;
+  }
+ }
+ @media (min-width: 320px){
+  #caja1{
+  background: url("1fondo320.png") no-repeat;
+  width: 320px;
+  height: 249px;
+  margin-left: 0px;
+  margin-top: 260px;
+  position: absolute;
+  }
+#playpausebtn1{
+    margin: 88px;
+    margin-left:123px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px red;
+    position: absolute;
+  }
+  #playpausebtn1:hover{
+ box-shadow: 0 0 20px red;
+  }
+ @media (min-width: 480px){
+  #caja1{
+  background: url("1fondo480.png") no-repeat;
+  width: 480px;
+  height: 373px;
+  margin-left: 0px;
+  margin-top: 400px;
+  position: absolute;
+  }
+#playpausebtn1{
+    margin: 40px;
+    margin-left:40px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    position: absolute;
+  }
+ #playpausebtn1:hover{
+ box-shadow: 0 0 12px red;
+  }
+  #vivo1{
+    display: inline-block;
+    position: absolute;
+    background-color: red;
+    margin-left: 115px;
+    margin-top: 55px;
+    font-size: 2em;
+    font-family: futura md bt,normal;
+    opacity: 0.8;
+  }
+ }
+ @media (min-width: 980px){
+  #caja1{
+  background: url("1fondo480.png") no-repeat;
+  width: 480px;
+  height: 373px;
+  margin-left: 500px;
+  margin-top: 0px;
+  position: absolute;
+   }
+#playpausebtn1{
+    margin: 40px;
+    margin-left:40px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    position: absolute;
+  }
+ #playpausebtn1:hover{
+ box-shadow: 0 0 12px red;
+  }
+  #vivo1{
+    display: inline-block;
+    position: absolute;
+    background-color: red;
+    margin-left: 115px;
+    margin-top: 55px;
+    font-size: 2em;
+    font-family: futura md bt,normal;
+    opacity: 0.8;
+  }
+ }
+ @media (min-width: 1200px){
+  #caja1{
+  background: url("1fondo480.png") no-repeat;
+  width: 480px;
+  height: 373px;
+  margin-left: 500px;
+  margin-top: 0px;
+  position: absolute;
+  }
+#playpausebtn1{
+    margin: 40px;
+    margin-left:40px; 
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    position: absolute;
+  }
+ #playpausebtn1:hover{
+ box-shadow: 0 0 12px red;
+  }
+  #vivo1{
+    display: inline-block;
+    position: absolute;
+    background-color: red;
+    margin-left: 115px;
+    margin-top: 55px;
+    font-size: 2em;
+    font-family: futura md bt,normal;
+    opacity: 0.8;
+  }
+ }
+</style>
